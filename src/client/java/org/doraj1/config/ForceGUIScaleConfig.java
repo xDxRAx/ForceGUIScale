@@ -33,9 +33,8 @@ public class ForceGUIScaleConfig {
 
     private static ForceGUIScaleConfig load() {
         if (CONFIG_PATH == null || !Files.exists(CONFIG_PATH)) {
-            // 설정 파일이 없으면 기본값으로 새 인스턴스를 생성
             ForceGUIScaleConfig config = new ForceGUIScaleConfig();
-            config.save(); // 기본 설정 파일 저장
+            config.save();
             return config;
         }
 
