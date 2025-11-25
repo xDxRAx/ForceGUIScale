@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "forceguiscale",
+	"version": "${version}",
+	"name": "Force GUI Scale",
+	"description": "GUI 비율을 고정해주는 모드입니다! 유니코드 여부에 상관없이 강제로 적용이 가능해집니다!",
+	"authors": [
+		"cloraj1"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GNU v3",
+	"icon": "assets/forceguiscale/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.doraj1.ForceGUIScale"
+		],
+		"client": [
+			"org.doraj1.ForceGUIScaleClient"
+		]
+	},
+	"mixins": [
+		"forceguiscale.mixins.json",
+		{
+			"config": "forceguiscale.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": ">=1.21.9",
+		"java": ">=21",
+        "fabric-api": "*",
+        "cloth-config": "*",
+		"modmenu": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

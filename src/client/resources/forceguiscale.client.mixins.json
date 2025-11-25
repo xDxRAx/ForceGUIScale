@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "org.doraj1.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"WindowMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
